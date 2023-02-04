@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title -->
+  <title>Temperature Converter</title>
+<!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+	<h1>
+		Temperature Converter
+  </h1>
+  <div class="converter-col">
+    <div class="converter-row">
+      <!-- Defining Radio Buttons -->
+      <div class="col">
+        <input id="celsius" type="radio" name="temp" value="celsius" checked>Celsius
+      </div>
+      <div class="col">
+        <input id="fahrenheit" type="radio" name="temp" value="fahrenheit">Fahrenheit
+      </div>
+      <div class="col">
+        <input id="kelvin" type="radio" name="temp" value="kelvin">Kelvin
+      </div>
+    </div>
+
+    <!-- Taking Input in the Input Box -->
+    <input type="number" id="number" placeholder="Input Values Here" required>
+
+    <!-- Convert and Clear Button -->
+    <button class="btn" type="button" onclick="displayans()">Convert</button>
+    <button class="btn1" type="button" onclick="clearans()">Clear</button>
+
+    <!-- To Show the results -->
+    <div class="results">
+      <div class="row">
+        <label class="col">Kelvin</label>
+        <div id="ans3" ></div>
+      </div>
+      <div class="row">
+        <label class="col">Celsius</label>
+        <div id="ans1" ></div>
+      </div>
+      <div class="row">
+        <label class="col">Fahrenheit</label>
+        <div id="ans2"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--External Script Link -->
+<script src="script.js"></script>
+
+</body>
+</html>
